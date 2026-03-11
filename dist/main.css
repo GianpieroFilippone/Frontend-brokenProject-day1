@@ -3,6 +3,17 @@
   padding: 0;
 }
 
+/* Usare border-box evita che padding e border aumentino la larghezza reale
+   degli elementi, prevenendo overflow nelle Grid e layout che “debordano”. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 html {
   font-size: 16px;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
